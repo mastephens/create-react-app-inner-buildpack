@@ -36,12 +36,12 @@ then
   echo '       Using existing `static.json`'
 else
   echo '       Writing `static.json` to support create-react-app'
-  echo '{ "root": "client/build/" }' > static.json
+  echo '{ "root": "build/" }' > static.json
 fi
 
 echo '       Enabling runtime environment variables'
 
-cra_dir="$BUILD_DIR/.heroku/create-react-app"
+cra_dir="$BUILD_DIR/.heroku/client"
 mkdir -p "$cra_dir"
 cp "$BP_DIR/lib/injectable_env.rb" "$cra_dir/"
 
