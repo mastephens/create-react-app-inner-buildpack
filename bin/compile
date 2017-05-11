@@ -41,7 +41,7 @@ fi
 
 echo '       Enabling runtime environment variables'
 
-cra_dir="$BUILD_DIR/.heroku/client"
+cra_dir="$BUILD_DIR/.heroku/create-react-app"
 mkdir -p "$cra_dir"
 cp "$BP_DIR/lib/injectable_env.rb" "$cra_dir/"
 
